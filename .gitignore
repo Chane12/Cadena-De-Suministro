@@ -1,0 +1,43 @@
+# Archivos ignorados por Git
+# ─────────────────────────────────────────────────────
+
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Variables de entorno (NUNCA subir al repositorio)
+.env
+
+# Datos (raw y procesados - pueden ser voluminosos)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# Modelos entrenados
+src/models/artifacts/*.pkl
+
+# Logs
+logs/*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
